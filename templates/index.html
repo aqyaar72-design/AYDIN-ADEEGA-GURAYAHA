@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="so">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#082b61">
+<meta name="description" content="AYDIN CLEANING SERVICES — adeegyada nadaafadda guryaha iyo xafiisyada.">
+<title>AYDIN CLEANING SERVICES | Adeegyada Nadaafadda</title>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+<header class="header">
+ <a class="brand" href="#hore"><img src="{{ url_for('static',filename='images/aydin-logo.png') }}" alt="Astaanta AYDIN CLEANING SERVICES"><span>AYDIN <b>CLEANING SERVICES</b><small>ADEEGYADA NADAAFADDA GURYAHA</small></span></a>
+ <button class="menu-toggle" id="menuToggle" aria-label="Fur menu" aria-expanded="false">☰</button>
+ <nav id="mainNav"><a href="#hore">Bogga hore</a><a href="#adeegyada">Adeegyadeenna</a><a href="#qiimaha">Qiimayaasha</a><a href="#dalbo">Dalbo adeeg</a><a href="#xiriir">Nala soo xiriir</a></nav>
+ <a class="head-cta" href="#dalbo">Hadda dalbo</a>
+</header>
+<main>
+<section class="hero" id="hore">
+ <div class="hero-copy"><span class="eyebrow">NADIIF • AMMAAN • LAGU KALSOON YAHAY</span>
+ <h1>Gurigaaga nadiif ah,<br><em>nolol farxad leh.</em></h1>
+ <p>Waxaan kuu haynaa adeegyo nadaafadeed oo xirfad leh: guryo, xafiisyo, fadhiyo, roogag iyo buufinta cayayaanka.</p>
+ <div class="hero-actions"><a class="btn primary" href="#dalbo">Dalbo adeeg <span>→</span></a><a class="btn secondary" href="#adeegyada">Eeg adeegyadeenna</a></div>
+ <div class="trust"><span>✓ Shaqaale xirfad leh</span><span>✓ Ballan la qorsheeyo</span><span>✓ Qiime cad</span></div></div>
+ <div class="hero-logo"><img src="{{ url_for('static',filename='images/aydin-logo.png') }}" alt="AYDIN Cleaning Services"></div>
+</section>
+<section class="highlights"><div><b>8+</b><span>Adeegyo kala duwan</span></div><div><b>₹</b><span>Qiimeyaal cad</span></div><div><b>24/7</b><span>Dalab online ah</span></div></section>
+<section class="section" id="adeegyada"><div class="section-title"><span class="eyebrow">ADEEGYADEENNA</span><h2>Maxaad u baahan tahay?</h2><p>Dooro adeegga kugu habboon, kadibna noo soo dir codsigaaga.</p></div>
+<div class="services">
+ <article class="service"><i>🏠</i><h3>Nadaafadda guryaha</h3><p>Nadiifin joogto ah ama hal mar ah oo gurigaaga ah.</p><a href="#dalbo" data-service="home">Dalbo adeeggan →</a></article>
+ <article class="service"><i>🏢</i><h3>Nadaafadda xafiisyada</h3><p>Nadiifin iyo hagaajin goobaha shaqada.</p><a href="#dalbo" data-service="office">Dalbo adeeggan →</a></article>
+ <article class="service"><i>🧽</i><h3>Nadiifin qoto dheer</h3><p>Jikada, musqusha, sagxadaha iyo qolalka.</p><a href="#dalbo" data-service="deep">Dalbo adeeggan →</a></article>
+ <article class="service"><i>🛋️</i><h3>Sofa, roog iyo furaash</h3><p>Nadiifinta fadhiyada, roogagga iyo furaashyada.</p><a href="#dalbo" data-service="sofa">Dalbo adeeggan →</a></article>
+ <article class="service"><i>🛡️</i><h3>Buufinta cayayaanka</h3><p>La dagaallanka baranbarada, quraanjada, kaneecada iyo dhilqaha.</p><a href="#dalbo" data-service="pest">Dalbo adeeggan →</a></article>
+ <article class="service"><i>🧺</i><h3>Dhar dhaqid iyo feereyn</h3><p>Adeegga dhar dhaqidda iyo feereynta. Qiime marka la weydiiyo.</p><a href="#dalbo" data-service="laundry">Weydii qiimaha →</a></article>
+ <article class="service"><i>🍲</i><h3>Cunto karin</h3><p>Adeeg cunto karin. Qiime marka la weydiiyo.</p><a href="#dalbo" data-service="cooking">Weydii qiimaha →</a></article>
+ <article class="service"><i>🔑</i><h3>Dallaalka guryaha kirada</h3><p>Caawinta helitaanka qolal iyo guryo kiro ah.</p><a href="#dalbo" data-service="rental">Dalbo adeeggan →</a></article>
+</div></section>
+<section class="section price-section" id="qiimaha"><div class="section-title"><span class="eyebrow">QIIMAHA ADEEGYADA</span><h2>Qiime cad oo la fahmi karo</h2><p>Dhammaan qiimayaashu waa Rupees-ka Hindiya (₹).</p></div>
+<div class="price-grid">
+ <div class="price-card"><h3>Nadaafad joogto ah</h3><p class="sub">Bishiiba hal mar / qorshe bille ah</p><div class="price-row"><span>1 BHK</span><b>₹2,000</b></div><div class="price-row"><span>2 BHK</span><b>₹2,500</b></div><div class="price-row"><span>3 BHK</span><b>₹3,000</b></div><div class="price-row"><span>4 BHK</span><b>₹4,500</b></div><div class="price-row"><span>5 BHK</span><b>₹6,000</b></div></div>
+ <div class="price-card"><h3>Nadaafad hal mar</h3><p class="sub">Caadi / nadiifin qoto dheer</p><div class="price-row"><span>1 BHK</span><b>₹1,000 / ₹1,800</b></div><div class="price-row"><span>2 BHK</span><b>₹2,000 / ₹2,800</b></div><div class="price-row"><span>3 BHK</span><b>₹3,000 / ₹4,000</b></div><div class="price-row"><span>4 BHK</span><b>₹4,000 / ₹5,500</b></div><div class="price-row"><span>5 BHK</span><b>₹5,000 / ₹7,000</b></div><small>Qiimaha koowaad waa caadi; kan labaad waa qoto dheer.</small></div>
+ <div class="price-card"><h3>Buufinta cayayaanka</h3><p class="sub">Qiimaha guriga</p><div class="price-row"><span>1 BHK</span><b>₹1,500</b></div><div class="price-row"><span>2 BHK</span><b>₹2,000</b></div><div class="price-row"><span>3 BHK</span><b>₹2,500</b></div><div class="price-row"><span>4 BHK</span><b>₹3,000</b></div><div class="price-row"><span>5 BHK</span><b>₹3,500</b></div></div>
+ <div class="price-card"><h3>Sofa, roog iyo furaash</h3><p class="sub">Qiimaha halkii xabbo</p><div class="price-row"><span>Sofa 1 / 2 kursi</span><b>₹500 / ₹1,500</b></div><div class="price-row"><span>Sofa 3 / 5 kursi</span><b>₹2,500 / ₹3,000</b></div><div class="price-row"><span>Sofa 7 kursi</span><b>₹3,500</b></div><div class="price-row"><span>Roog yar / dhexe / weyn</span><b>₹1,500 / 2,500 / 3,500</b></div><div class="price-row"><span>Furaash keli / laba qof</span><b>₹2,000 / ₹3,500</b></div></div>
+ <div class="price-card"><h3>Dallaalka guryaha kirada</h3><p class="sub">Lacagta adeegga</p><div class="price-row"><span>Qol weyn</span><b>₹2,000</b></div><div class="price-row"><span>Qol keli ah</span><b>₹1,500</b></div><div class="price-row"><span>1 BHK ilaa 5 BHK</span><b>₹2,500–₹4,500</b></div></div>
+ <div class="price-card quote-card"><h3>Adeegyo qiime gaar ah leh</h3><p class="sub">Qiimaha waxaa laguu sheegayaa markaad nala soo xiriirto.</p><div class="price-row"><span>Cunto karin</span><b>Weydii qiimaha</b></div><div class="price-row"><span>Dhar dhaqid & feereyn</span><b>Weydii qiimaha</b></div><div class="price-row"><span>Nadaafadda xafiisyada</span><b>Weydii qiimaha</b></div></div>
+</div><p class="price-foot">Fiiro gaar ah: Qiimaha kama dambaysta ah waxaa la xaqiijinayaa marka shirkaddu hubiso faahfaahinta goobta iyo adeegga.</p>
+</section>
+<section class="booking-wrap" id="dalbo"><div class="booking-intro"><span class="eyebrow">DALBO ADEEG</span><h2>Ballantaada hadda samee.</h2><p>Buuxi xogtaada. Shaqaalaha AYDIN ayaa kula soo xiriiri doona si ay u xaqiijiyaan codsiga.</p><div class="notice"><b>Ogow</b><span>Dalabkaagu wuxuu rasmi noqonayaa marka shirkaddu kula soo xiriirto oo ay xaqiijiso.</span></div><div class="contact-mini"><b>Su'aal ma qabtaa?</b><a href="https://wa.me/917981977002" target="_blank" rel="noopener">WhatsApp: +91 79819 77002</a></div></div>
+<form id="bookingForm" class="booking-form"><div class="form-heading"><span>📝</span><div><b>Foomka dalabka adeegga</b><small>Meelaha * leh waa qasab</small></div></div>
+<div class="form-grid">
+<label>Magaca oo buuxa *<input name="customer_name" required placeholder="Magacaaga"></label>
+<label>Lambarka telefoonka *<input name="phone" required type="tel" placeholder="+91..."></label>
+<label>Email (ikhtiyaari)<input name="email" type="email" placeholder="email@example.com"></label>
+<label>Magaalada / Aagga *<input name="city" required placeholder="Tusaale: Hyderabad"></label>
+<label class="full">Cinwaanka goobta *<input name="address" required placeholder="Cinwaanka guriga ama goobta"></label>
+<label>Adeegga aad rabto *<select name="service_id" id="serviceSelect" required><option value="">Dooro adeegga</option><option value="home">Nadaafadda guryaha</option><option value="office">Nadaafadda xafiisyada</option><option value="deep">Nadiifin qoto dheer</option><option value="sofa">Sofa, roog iyo furaash</option><option value="pest">Buufinta cayayaanka</option><option value="laundry">Dhar dhaqid iyo feereyn</option><option value="cooking">Cunto karin</option><option value="rental">Dallaalka guryaha kirada</option></select></label>
+<label>Nooca guriga / goobta<select name="property_type" id="propertyType"><option value="">Dooro</option><option>Qol keli ah</option><option>Qol weyn</option><option>1 BHK</option><option>2 BHK</option><option>3 BHK</option><option>4 BHK</option><option>5 BHK</option><option>Xafiis</option><option>Goob kale</option></select></label>
+<label>Nooca nadiifinta<select name="cleaning_type" id="cleaningType"><option value="">Dooro haddii ay khusayso</option><option value="normal">Nadiifin caadi ah</option><option value="deep">Nadiifin qoto dheer</option><option value="monthly">Nadaafad bille ah</option></select></label>
+<label>Taariikhda aad rabto *<input name="preferred_date" id="dateInput" type="date" required></label>
+<label>Waqtiga kugu habboon *<select name="preferred_time" required><option value="">Dooro waqti</option><option>8:00 subaxnimo – 11:00 barqannimo</option><option>11:00 barqannimo – 2:00 duhurnimo</option><option>2:00 duhurnimo – 5:00 galabnimo</option><option>5:00 galabnimo – 8:00 fiidnimo</option></select></label>
+<label class="full">Faahfaahin dheeraad ah<textarea name="details" rows="3" placeholder="Noo sheeg waxyaabaha kale ee aan u baahan nahay inaan ogaano..."></textarea></label>
+</div><div id="quoteNotice" class="quote-notice" hidden>Adeeggan qiime go'an ma laha. Waxaan kula soo xiriiri doonnaa si aan qiimaha kuugu sheegno.</div>
+<div class="estimate" id="estimate" hidden><span>Qiimaha ku qoran liiska</span><b id="estimateValue"></b></div>
+<button class="btn primary submit" type="submit">Dir codsiga <span>→</span></button><div id="formMessage" role="status" class="message"></div>
+</form></section>
+<section class="contact-band" id="xiriir"><div><span class="eyebrow">NALA SOO XIRIIR</span><h2>Waxaan diyaar u nahay inaan ku caawinno.</h2><p>Wac ama WhatsApp nagala soo xiriir si aad u hesho faahfaahin.</p></div><a href="https://wa.me/917981977002" target="_blank" rel="noopener" class="btn white">WhatsApp nagala hadal ↗</a></section>
+</main>
+<footer><div class="footer-brand"><img src="{{ url_for('static',filename='images/aydin-logo.png') }}" alt=""><b>AYDIN CLEANING SERVICES</b></div><p>© <span id="year"></span> AYDIN CLEANING SERVICES. Xuquuqda way dhowran tahay.</p><a href="/maamulka">Gelitaanka maamulka</a></footer>
+<a class="whatsapp-float" href="https://wa.me/917981977002?text=Salaan%20AYDIN%20CLEANING%20SERVICES%2C%20waxaan%20rabaa%20faahfaahin%20adeeg." target="_blank" rel="noopener" aria-label="WhatsApp nagala soo xiriir"><span class="wa-icon">☎</span><span class="wa-label">Nala hadal</span></a>
+<script src="{{ url_for('static',filename='js/config.js') }}"></script><script src="{{ url_for('static',filename='js/site.js') }}"></script>
+</body></html>
